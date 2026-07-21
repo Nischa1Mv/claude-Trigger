@@ -9,7 +9,7 @@ open when actual work starts — instead of losing the first chunk of a session 
 
 ## Plan
 
-- Two daily firings: 7:00 AM IST and 12:00 AM IST (converted to UTC cron: `30 1,18 * * *`)
+- Two daily firings: 7:00 AM IST and 12:00 PM IST (converted to UTC cron: `30 1,18 * * *`)
 - Each firing spins up a cloud Claude Code session pointed at this repo, running a trivial
   no-op prompt (e.g. "acknowledge, nothing needed") — just enough to count as session activity.
 - Setup uses the `RemoteTrigger` tool (`action: create`) with `job_config.ccr` pointing at:
